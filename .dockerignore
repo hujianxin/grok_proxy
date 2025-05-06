@@ -1,0 +1,54 @@
+# Git files
+.git
+.gitignore
+
+# Python virtual environment and caches
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.coverage
+.htmlcov/
+
+# Project specific build and distribution folders
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Dependency lock files (optional, depending on whether you want to include them in the image)
+# requirements.txt
+# uv.lock
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Environment files (optional, depending on whether you want to include them in the image)
+.env
+
+# Test files and coverage reports (optional, depending on whether you want to include them in the image)
+tests/
+coverage/
+
+# Documentation files (optional)
+docs/
+
+# macOS specific files
+.DS_Store
+Thumbs.db
