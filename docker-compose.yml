@@ -2,13 +2,7 @@ version: '3.8'
 
 services:
   grok-proxy:
-    build: .
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
-    restart: unless-stopped
-    volumes:
-      - .:/app
-      - /home/ubuntu/logs/grok_proxy:/app/logs
-    command: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: grok-proxy-image:latest

@@ -83,16 +83,14 @@ Make sure the `.env` file is in the directory from which you run the Docker comm
 
 ### Using Docker Compose
 
-For a managed setup with multiple services using Docker Compose:
+To build the Docker image for Grok Proxy using Docker Compose:
 
-1. Ensure you have a `.env` file in the project root directory. If not, create one with the required configurations.
-
-2. **Start the Services**:
+1. **Build the Image**:
    ```bash
-   docker-compose up --build
+   docker-compose build
    ```
 
-This command builds and starts the Grok Proxy service along with any other services defined in the `docker-compose.yml` file.
+This command builds the Docker image for Grok Proxy as defined in the `docker-compose.yml` file. Note that this configuration is solely for building the image and does not start the service.
 
 ---
 
